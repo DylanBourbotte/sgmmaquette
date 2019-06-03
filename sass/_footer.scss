@@ -1,0 +1,59 @@
+.mainFooter {
+    background: url(../img/texture_marque.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar-footer {
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     justify-content: center;
+     margin-left: 10%;
+    li {
+        list-style: none;
+        margin-right: 50px;
+        text-transform: uppercase;
+        a {
+            color: #2b356e;
+            text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+            margin-right: 25px;
+            font-style: bold;
+            &:hover {
+                color: #fff;
+                transition: color 0.3s ease-in;
+            }
+        }
+    }
+}
+
+.logo_footer {
+    width: 20%;
+    margin-top: 5%;
+}
+
+.mentionandcreated {
+    color: #fff;
+    margin-left: 35%;
+    margin-top: 5%;
+    a {
+        color: #fff;
+
+    }
+}
+
+.iconfacetwit {
+    font-size: 25px;
+    margin-left: 40%;
+    padding-right: 15px;
+}
+
+.iconfacetwit i {
+     padding-right: 15px;
+}
+
+footer {
+    padding-bottom: 20px;
+}

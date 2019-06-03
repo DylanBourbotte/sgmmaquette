@@ -1,0 +1,54 @@
+// .sliderTop {
+//     position: relative;
+//     z-index: 1;
+// }
+
+.firstSlider li{
+    border-radius: 0%;
+    width: 15px;
+    height: 15px;
+    background-color: #f9c121;
+}
+
+.firstSlider li:active {
+    background-color: black;
+}
+
+
+
+
+// @-webkit-keyframes c {
+//     0% {
+//         -webkit-transform: scale(1.5) translateZ(0);
+//         transform: scale(1.5) translateZ(0);
+//         opacity: 0.8;
+//     }
+//     100% {
+//         -webkit-transform: scale(1) translateZ(0);
+//         transform: scale(1) translateZ(0);
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes c {
+//     0% {
+//         -webkit-transform: scale(1.5) translateZ(0);
+//         transform: scale(1.5) translateZ(0);
+//     }
+//     100% {
+//         -webkit-transform: scale(1) translateZ(0);
+//         transform: scale(1) translateZ(0);
+//     }
+// }
+
+// .carousel-item {
+//         animation-duration: 7s;
+//         animation-name: c;
+// }
+
+
+
+
+
+
+

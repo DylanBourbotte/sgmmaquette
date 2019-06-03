@@ -1,0 +1,27 @@
+@import 'vars';
+@import 'header';
+@import 'slideHome';
+@import 'welcome';
+@import 'map';
+@import "marque";
+@import 'engin';
+@import 'new';
+@import 'actu';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+}
+// .container {
+//     margin-top: 0;
+//     top: 0;
+// }
+

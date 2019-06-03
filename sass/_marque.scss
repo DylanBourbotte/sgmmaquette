@@ -1,0 +1,44 @@
+.nos_marque {
+    background-image: url(../img/texture_marque.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 1%;
+}
+
+.marqueTitle {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 7%;
+    margin-left: 30%;
+    position: relative;
+    z-index: 5;
+}
+
+.marquage {
+    color: white;
+}
+
+.marque_text {
+    margin-top: 5%;
+    color: #2c2c2c;
+    font-family: "Montserrat", sans-serif;
+}
+
+.stripe_marque {
+    width: 45%;
+    position: absolute;
+    right: 70%;
+    z-index: 4;
+}
+
+.marque_title {
+    position: relative;
+    z-index: 5;
+}
+
+.marque_slider {
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,115 @@
+.mainHeader {
+    width: 100%;
+    height: 90px;
+    background-color: #2b356e;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 30%;
+    margin-top: 0;
+    height: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    
+    .nav-items {
+        line-height: 1;
+        text-transform: uppercase;
+        position: relative;
+        margin-right: 25px;
+        a {
+            color: #f9c121;
+            text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+            margin-right: 25px;
+            display: block;
+            &:hover {
+                color: white;
+                transition: color .3s ease-in;
+            }
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+.submenu {
+    list-style: none;
+    margin-top: 10px;
+    position: absolute;
+    float: none;
+}
+
+.menu-deroulant {
+    background: hsl(44, 95%, 55%);
+    z-index: 1000;
+    margin-top: 2%;
+    // width: 150px;
+    display: block;
+    position: absolute;
+    padding-left: 3px;
+    .submenu, .submenu a {
+        color: #fff;
+        padding-top: 1px;
+        position: relative;
+        // margin-left: 3px;
+        float: none;
+        // &:last-child {
+        //     padding-bottom: 5px;
+        // }
+        &:hover {
+            color: #2b356e;
+            transition: color .3s ease-in;
+            float: none;
+        }
+    }
+}
+
+.last-item {
+    padding-bottom: 10px;
+}
+
+.hr {
+    margin: 5px auto;
+    width: 90%;
+}
+
+@media only screen and (max-width: 990px) {
+    .navbar-nav {
+        display: none;
+    }             
+}
+
+@media only screen and (max-width: 770px) {
+    .logo {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .logo {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .logo {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .logo {
+       justify-content: left;
+
+    }
+}
