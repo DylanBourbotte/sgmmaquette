@@ -64,9 +64,27 @@
 }
 
 .actu {
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 #more {
     display: none;
+}
+
+@media only screen and (max-width: 990px) {
+    .stripe_actu {
+        display: none;
+    }
+
+    .actuTitle {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+
 }

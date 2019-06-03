@@ -44,3 +44,19 @@
 .icon_engin {
     margin-top: 2%;
 }
+
+
+@media only screen and (max-width: 990px) {
+    .stripe_engin {
+        display: none;
+    }
+
+    .enginTitle {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .icon {
+        margin-top: 5%;
+    }
+}

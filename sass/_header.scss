@@ -83,6 +83,31 @@
     width: 90%;
 }
 
+.btnMenu {
+    display: none;
+}
+
+.overlayMenu {
+    height: 100vh;
+    background: #2b356e;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        // margin-left: 50%;
+        li {
+            margin-top: 15%;
+            font-size: 25px;
+        }
+    }
+}
+
 @media only screen and (max-width: 990px) {
     .navbar-nav {
         display: none;
@@ -110,6 +135,16 @@
 @media only screen and (max-width: 970px) {
     .logo {
        justify-content: left;
+    }
 
+    .btnMenu {
+        display: flex;
+        color: #f9c121;
+        font-size: 30px;
+
+        // margin-top: 
+        // margin-left: 100%;
+        // position: relative;
     }
 }
+

@@ -13,6 +13,17 @@ $(document).ready(function(){
        })
 })
 
+$(document).ready(function(){
+  $(".sebmenu").hide();
+  $(".tractopelle").mouseover(function(){
+    $(".submenu").show();
+    $(".nav-items").css('"color', "white");
+  });
+  $(".tractopelle").mouseleave(function(){
+    $(".submenu").hide();
+  })
+})
+
 
 function hover(element) {
     element.setAttribute('src', './img/btphoverIcon.png');
@@ -26,15 +37,16 @@ function hover(element) {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
-    let innerBtn = document.getElementsByClassName("text_readmore");
+    let innerBtn = document.getElementById("text_read");
 
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
+      innerBtn.innerHTML = "Lire la suite"
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
-      innerBtn.innerHTML = "Contactez-nous";
+      innerBtn.innerHTML = "Contactez-nous"
       moreText.style.display = "inline";
     }
   } 

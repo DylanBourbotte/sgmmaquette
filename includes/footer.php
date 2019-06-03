@@ -4,10 +4,10 @@
     <div class="container">
         <nav class="nav-footer">
             <ul class="navbar-footer navbar-nav text-left">
-                <li><a href="#">Matériel btp</a></li>
-                <li><a href="#">Matériel de transport</a></li>
-                <li><a href="#">Matériel agricole</a></li>
-                <li><a href="#">Autres Services</a></li>
+                <li><a href="#">Matériel<br> btp</a></li>
+                <li><a href="#">Matériel<br> de transport</a></li>
+                <li><a href="#">Matériel<br> agricole</a></li>
+                <li><a href="#">Autres<br> Services</a></li>
             </ul>
         </nav>
 

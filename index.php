@@ -36,13 +36,13 @@ include('includes/header.php');
     <div class="container">
         <div class="row text-center welcome_row align-items-center">
             <div class="col-sm welcome_content">
-                <img class="img-fluid" src="img/logo_transpa.png">
+                <img class="img-fluid logo_welcome" src="img/logo_transpa.png">
             </div>
-            <div class="col-lg-4 col-sm-12 welcome_content">
-                <p class="welcome_para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi neque, iste laboriosam molestiae omnis mollitia ipsam distinctio earum repellat officiis ducimus sit sunt nobis autem illum perspiciatis quisquam exercitationem Ipsum porro repellendus, recusandae atque laborum facere nihil voluptates quas dolore natus a hic nulla itaque architecto quibusdam voluptatum.</p>
+            <div class="col-lg-4 col-12 welcome_content">
+                <p class="welcome_para text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi neque, iste laboriosam molestiae omnis mollitia ipsam distinctio earum repellat officiis ducimus sit sunt nobis autem illum perspiciatis quisquam exercitationem Ipsum porro repellendus, recusandae atque laborum facere nihil voluptates quas dolore natus a hic nulla itaque architecto quibusdam voluptatum.</p>
             </div>
-            <div class="col-lg-4 col-sm-12 welcome_content">
-                <p class="welcome_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur a, blanditiis officia enim impedit culpa soluta atque quasi sed id at ratione nihil natus non. Quis necessitatibus commodi suscipit?Voluptas porro facilis quas quae non possimus vitae libero optio dicta nobis nulla neque labore vero, dolorem unde cupiditate recusandae deleniti rem officia, cum ipsam? Nostrum incidunt necessitatibus fugiat aperiam.</p>
+            <div class="col-lg-4 col-12 welcome_content">
+                <p class="welcome_para text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur a, blanditiis officia enim impedit culpa soluta atque quasi sed id at ratione nihil natus non. Quis necessitatibus commodi suscipit?Voluptas porro facilis quas quae non possimus vitae libero optio dicta nobis nulla neque labore vero, dolorem unde cupiditate recusandae deleniti rem officia, cum ipsam? Nostrum incidunt necessitatibus fugiat aperiam.</p>
             </div>  
         </div>
 </section>
@@ -57,9 +57,9 @@ include('includes/header.php');
 
       <div class="row marquage">
         
-        <div class="col-md text-center marqueTitle">
+        <div class="col-md col-sm text-center marqueTitle">
           <img src="img/stripe.png" class='img-fluid stripe_marque'>
-          <h2 class="marque_title">NOS MARQUES</h2>
+          <h2 class="marque_title text-center">NOS MARQUES</h2>
         </div>
 
         <div class="col-md-4 col-sm-12 col-12 marque_text">
@@ -106,12 +106,12 @@ include('includes/header.php');
     <div class="container">
       <div class="row marquage">
         
-        <div class="col-sm text-center enginTitle">
+        <div class="col-md col-sm text-center enginTitle">
           <img src="img/stripe_yellow.png" class='img-fluid stripe_engin'>
           <h2 class="engin_title">NOS ENGINS</h2>
         </div>
 
-        <div class="col-sm-4 engin_text">
+        <div class="col-md-4 col-sm-12 col-12 engin_text">
           <p>Retouvez nos engins et matériels d’occasion, classé par secteur d’activité. Une séléction d’appareils controlés et garantis, pour réaliser vos chantiers sereinement.</p>
         </div>
   </div>
@@ -136,12 +136,12 @@ include('includes/header.php');
 <div class="container">
       <div class="row marquage">
         
-        <div class="col-sm text-center newTitle">
+        <div class="col-md col-sm text-center newTitle">
           <img src="img/stripe_yellow.png" class='img-fluid stripe_new'>
           <h2 class="new_title">NOUVEAUTÉS</h2>
         </div>
 
-        <div class="col-sm-4 new_text">
+        <div class="col-md-4 col-sm-12 col-12 new_text">
           <p>Les derniers engins d'occassions à votre dispositions</p>
         </div>
 
@@ -174,23 +174,24 @@ include('includes/header.php');
   
   <div class="container">
     <div class="row marquage">
-        <div class="col-sm text-center actuTitle">
+        <div class="col-md col-sm text-center actuTitle">
           <img src="img/stripe_yellow.png" class='img-fluid stripe_actu'>
           <h2 class="actu_title">ACTUALITÉS</h2>
         </div>
 
-        <div class="col-sm-4 actu_text">
+        <div class="col-md-4 col-sm-12 col-12 actu_text">
           <p>Les actualités de nos réseaux sociaux, les derniers engins et les occasions à saisir</p>
         </div>
     </div>
 
     <div class="row article_actu">
-        <div class="col-sm">
+        <div class="col-sm text-center">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="img/actuimg.png" alt="Card image cap">
            <div class="card-body">
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<span id="dots">(..)</span><span id="more">et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-              <button class="readmore" id="myBtn" onclick="readMore()"><span class="text_readmore">Lire la suite</span></button>
+              <button class="readmore" id="myBtn" onclick="readMore()"><span id="text_read">Lire la suite</span></button>
+              <!-- <button class="readmore" id="mySecondBtn"><span class="text_readmore">Contactez nous</span></button> -->
           </div>
         </div>
       </div>

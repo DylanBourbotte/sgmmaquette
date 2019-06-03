@@ -12,6 +12,18 @@
     <div class="container">
         <nav class="nav">
             <img class="logo img-fluid" src="./img/logo.png" alt="Logo de la société">
+            <div class="btnMenu"><i class="fas fa-bars"></i></div>
+            <div class="overlayMenu">
+            <div class="row">
+            <ul class="navbar-nav align-bottom text-left">
+                <li class="nav-items"><a href="#">Matériel btp</a></li>
+                <li class="nav-items"><a href="#">Matériel de transport</a></li>
+                <li class="nav-items"><a href="#">Matériel agricole</a></li>
+                <li class="nav-items"><a href="#">Autres services</a></li>
+            </ul>
+</div>
+            </div>
+            
             <ul class="navbar-nav align-bottom text-left">
                 <li class="nav-items materielbtp"><a href="#">Matériel<br>btp</a>
                 <ul class="text-left menu-deroulant">
@@ -48,10 +60,7 @@
                 <li class="nav-items"><a href="#">Matériel<br>agricole</a></li>
                 <li class="nav-items"><a href="#">autres<br>services</a></li>
                 <li>
-                <select class="selectpicker" data-width="fit">
-                    <option data-content='<span class="flag-icon flag-icon-fr"></span> English'>Français</option>
-                    <option  data-content='<span class="flag-icon flag-icon-en"></span> Español'>Anglais</option>
-                </select>
+                    
                 </li>
             </ul>
         </nav>

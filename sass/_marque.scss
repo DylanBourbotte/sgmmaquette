@@ -42,3 +42,18 @@
     background: #fff;
     margin-bottom: 50px;
 }
+
+@media only screen and (max-width: 990px) {
+    .stripe_marque {
+        display: none;
+    }
+
+    .marqueTitle {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .marque_slider {
+        margin-top: 2%;
+    }
+}
