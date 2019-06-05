@@ -62,7 +62,7 @@ include('includes/header.php');
           <h2 class="marque_title text-center">NOS MARQUES</h2>
         </div>
 
-        <div class="col-md-4 col-sm-12 col-12 marque_text">
+        <div class="col-lg-4 col-md-12 col-12 marque_text">
           <p>Retouvez les plus grandes marque d’engins pour répondre à tous vos besoins, que ce soit dans les travaux publics, le transport et les travaux agricoles.</p>
         </div>
 
@@ -111,7 +111,7 @@ include('includes/header.php');
           <h2 class="engin_title">NOS ENGINS</h2>
         </div>
 
-        <div class="col-md-4 col-sm-12 col-12 engin_text">
+        <div class="col-lg-4 col-md-12 col-12 engin_text">
           <p>Retouvez nos engins et matériels d’occasion, classé par secteur d’activité. Une séléction d’appareils controlés et garantis, pour réaliser vos chantiers sereinement.</p>
         </div>
   </div>
@@ -141,30 +141,45 @@ include('includes/header.php');
           <h2 class="new_title">NOUVEAUTÉS</h2>
         </div>
 
-        <div class="col-md-4 col-sm-12 col-12 new_text">
+        <div class="col-lg-4 col-md-12 col-12 new_text">
           <p>Les derniers engins d'occassions à votre dispositions</p>
         </div>
 
   </div>
 
-  <div class="row">
-      <div class="col-12 article">
-
+  <?php 
+    $requete = 'SELECT * FROM nouveaute';
+    $resultat = $bdd->query($requete);
+    while ($ligne = $resultat->fetch()) {
+  ?>
+    <div class="row new_article">
+      <div class="col-lg-4 col-md-12 img_article">
+        <img src="<?php echo $ligne['img']; ?>" class="img-fluid photo_new" alt="photo d'une nouveauté">
       </div>
-
-      <div class="col-12 article">
-
+      <div class="col-lg-4 col-md-12 info_new">
+        <ul class="info-list">
+          <li class="info-items"><p class="title_article"><?php echo $ligne['nameproduct']; ?><br>
+          <?php echo $ligne['modele']; ?></p></li>
+          <li class="info-items"><img src="img/yearsicon.png" alt="Icon de calendrier" class='icon_new'> <?php echo $ligne['yearproduct'] ?></li>
+          <li class="info-items"><img src="img/kmicon.png" alt="Icon de kilometrage" class='icon_new'> <?php echo $ligne['kilometrage'] ?></li>   
+          <li class="info-items"><img src="img/typeicon.png" alt="Icon de type" class='icon_new'> <?php echo $ligne['typeproduct'] ?></li>   
+          <li class="info-items"><img src="img/hoursicon.png" alt="Icon d'heures" class='icon_new'> <?php echo $ligne['hoursproduct'] ?></li>   
+        </ul>
       </div>
-
-      <div class="col-12 article">
+      <div class="col-lg-4 col-md-12">
+        <div class="price">
+          <p class="prix text-center"><?php echo $ligne['price']; ?> € HT</p>
+        </div>
+          <button class="read_more new_btn" id="myBtn"><span class="text_readmore">En savoir +</span></button>
+      </div>
+    </div>
+ 
+<?php
+    }
+?>
 
 </div>
 
-<div class="col-12 article">
-
-</div>
-  </div>  
-        
   </div>
 
 </section>
@@ -179,7 +194,7 @@ include('includes/header.php');
           <h2 class="actu_title">ACTUALITÉS</h2>
         </div>
 
-        <div class="col-md-4 col-sm-12 col-12 actu_text">
+        <div class="col-lg-4 col-md-12 col-12 actu_text">
           <p>Les actualités de nos réseaux sociaux, les derniers engins et les occasions à saisir</p>
         </div>
     </div>

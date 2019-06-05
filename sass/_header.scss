@@ -10,6 +10,8 @@
     width: 30%;
     margin-top: 0;
     height: 100%;
+    position: relative;
+    z-index: 5;
 }
 
 .navbar-nav {
@@ -88,12 +90,17 @@
 }
 
 .overlayMenu {
-    height: 100vh;
+    height: 60vh;
     background: #2b356e;
-    width: 100%;
+    transition: top 0.4s ease-in-out;
+    width: 75%;
     position: absolute;
     z-index: 1000;
     display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    top: -9999px;
     ul {
         display: flex;
         flex-direction: column;
@@ -102,16 +109,35 @@
         margin-top: 10%;
         // margin-left: 50%;
         li {
-            margin-top: 15%;
+            margin-top: 10%;
             font-size: 25px;
         }
     }
 }
 
+.overlayMenu.active {
+    transition: top 0.4s ease-in-out;
+    top: 0;
+}
+
 @media only screen and (max-width: 990px) {
     .navbar-nav {
         display: none;
-    }             
+    } 
+    
+    .btnMenu {
+        display: flex;
+        color: #f9c121;
+        font-size: 30px;
+        position: relative;
+        z-index: 4;
+    } i {
+        margin: auto;
+    }
+
+    .overlayMenu {
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 770px) {
@@ -120,7 +146,7 @@
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .logo {
         width: 50%;
     }
@@ -137,14 +163,15 @@
        justify-content: left;
     }
 
-    .btnMenu {
-        display: flex;
-        color: #f9c121;
-        font-size: 30px;
 
-        // margin-top: 
-        // margin-left: 100%;
-        // position: relative;
-    }
 }
+
+// .mobile a {
+//     font-size: 20px;
+// }
+
+.mobile {
+    margin: auto
+}
+
 

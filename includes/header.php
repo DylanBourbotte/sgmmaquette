@@ -13,19 +13,22 @@
         <nav class="nav">
             <img class="logo img-fluid" src="./img/logo.png" alt="Logo de la société">
             <div class="btnMenu"><i class="fas fa-bars"></i></div>
+            
             <div class="overlayMenu">
-            <div class="row">
-            <ul class="navbar-nav align-bottom text-left">
-                <li class="nav-items"><a href="#">Matériel btp</a></li>
-                <li class="nav-items"><a href="#">Matériel de transport</a></li>
-                <li class="nav-items"><a href="#">Matériel agricole</a></li>
-                <li class="nav-items"><a href="#">Autres services</a></li>
+                <div class="row">
+                    <div class="col-12">
+                    <ul class="navbar-nav align-bottom text-center">
+                <li class="nav-items"><a class="mobile" style="margin: auto;" href="#">Matériel de btp</a></li>
+                <li class="nav-items"><a class="mobile" style="margin: auto;" href="#">Matériel de transport</a></li>
+                <li class="nav-items"><a class="mobile" style="margin: auto;" href="#">Matériel agricole</a></li>
+                <li class="nav-items"><a class="mobile" style="margin: auto;" href="#">Autres services</a></li>
             </ul>
-</div>
+            </div>
+            </div>
             </div>
             
             <ul class="navbar-nav align-bottom text-left">
-                <li class="nav-items materielbtp"><a href="#">Matériel<br>btp</a>
+                <li class="nav-items materielbtp"><a href="#">Matériel de<br>btp</a>
                 <ul class="text-left menu-deroulant">
                     <li class="submenu"><a href="#">Pelle</a></li>
                     <hr class="submenu hr">

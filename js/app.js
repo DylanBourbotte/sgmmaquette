@@ -11,7 +11,13 @@ $(document).ready(function(){
      $('.carousellol').carousel({
          interval: 1000 * 5
        })
-})
+
+      $('.btnMenu').click(function () {
+        $(".overlayMenu").toggleClass("active");
+});
+});
+
+
 
 $(document).ready(function(){
   $(".sebmenu").hide();
@@ -50,4 +56,7 @@ function hover(element) {
       moreText.style.display = "inline";
     }
   } 
+
+
+
  

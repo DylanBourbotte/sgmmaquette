@@ -33,11 +33,84 @@
     z-index: 5;
 }
 
-.article {
-    height: 200px;
+
+
+.newimg {
+    width: auto
+}
+
+.img_article {
+    margin: 0;
+    padding: 0;
+}
+
+.new_article {
+    background-color: #f9c121;
+}
+.info-list {
+
+    // margin-right: 80%;
+.info-items {
+    list-style: none;
+    margin-top: 3%;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    img {
+        width: 6%;
+        margin-left: 0;
+    }
+}
+
+.title_article {
+    font-size: 25px;
+}
+}
+
+.modele {
+    color: #fff;
+}
+
+.price {
+    color: #2b356e;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    display: inline-block;
     background: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5%;
+    margin-left: 50%;
+    font-size: 20px;
+    width: 50%;
+
+}
+
+.prix {
+    margin: 0;
+    justify-content: center;
+}
+
+.new_btn {
+    margin-left: 50%;
+    transform: skewX(-20deg);
+    border: none;
+    background: #2b356e;
+    color: #f9c121;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    width: 50%;
+    margin-top: 35%;
+}
+
+.text_readmore {
+    padding: 5px;
+}
+
+.new_article {
     margin-top: 5%;
 }
+
 
 @media only screen and (max-width: 990px) {
     .stripe_new {
@@ -49,9 +122,46 @@
         margin-left: 0;
     }
 
-    // .new_text {
-    //     margin-left: 50%;
-    //     transform: translateX(-10%);
-    //     margin-right: auto;
-    // }
+    .photo_new {
+        display: flex;
+        margin: auto;
+    }
+
+    .info_new {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .price {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .new_btn {
+        margin-left: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    .new_article {
+        padding-bottom: 10px;
+        margin: 5px;
+    }
+
+    .new_text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-items {
+        list-style: none;
+        margin-top: 3%;
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+    }
+
+    .icon_new {
+        width: 10%;
+    }
 }
