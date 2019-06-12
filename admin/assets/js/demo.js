@@ -268,7 +268,7 @@ demo = {
             height: "245px"
         };
 
-        var responsiveOptions = [
+        let responsiveOptions = [
             ['screen and (max-width: 640px)', {
                 seriesBarDistance: 5,
                 axisX: {
@@ -278,7 +278,7 @@ demo = {
                 }
             }]
         ];
-
+4
         var chartActivity = Chartist.Bar('#chartActivity', data, options, responsiveOptions);
 
         // lbd.startAnimationForBarChart(chartActivity);

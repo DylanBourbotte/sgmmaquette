@@ -1,6 +1,7 @@
 
 <?php
 require('../includes/config.php');
+require('auth_verification.php');
 ?>
 
 <!DOCTYPE html>
@@ -50,7 +51,7 @@ require('../includes/config.php');
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="liste_article.php">
+                        <a class="nav-link" href="edition.php">
                             <i class="fas fa-edit"></i>
                             <p>Edition d'article</p>
                         </a>

@@ -830,3 +830,21 @@
 .documentation .dropdown .dropdown-menu.show {
     transform: translate3d(0, 39px, 0) !important;
 }
+
+.admin_icon {
+    width: 3%;
+    margin-right: 15px;
+}
+
+.newimg_admin {
+    width: 368px;
+    height: 267px;
+}
+
+.deletebtn {
+    margin-top: 2%;
+}
+
+.admin_liste {
+    margin-top: 0;
+}

@@ -1,3 +1,7 @@
+<?php 
+require('auth_verification.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,6 +94,55 @@
                             </div>
 
                             <div class="form-group">
+                                <label for="modele">Page</label>
+                                <select class="form-control" name="page">
+                                    <option value="btp">Matériel BTP</option>
+                                    <option value="transport">Matériel de transport</option>
+                                    <option value="agricole">Matériel agricole</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="materiel">Type de matériel</label>
+                                <select class="form-control" name="materiel">
+                                    <option disabled selected>BTP</option>
+                                    <option value="pelleteuse">Pelleteuse</option>
+                                    <option value="chargeuse">Charseuse</option>
+                                    <option value="bulldozer">Bulldozer</option>
+                                    <option value=niveleuse>Niveleuse</option>
+                                    <option value="tractopelle">Tractopelle</option>
+                                    <option value="tomberau">Tomberau</option>
+                                    <option value="grue">Grue</option>
+                                    <option value="forage">Forage</option>
+                                    <option value="concassage">Concassage</option>
+                                    <option value="groupe-electrogene">Groupe électrogène</option>
+                                    <option value=porteengin>Porte engin</option>
+                                    <option value="location">Location</option>
+                                    <option value="pieces">Piece</option>
+                                    <option value="pneu">Pneu</option>
+                                    <option disabled selected>TRANSPORT</option>
+                                    <option value="camion">Camion</option>
+                                    <option value="tracteur">Tracteurs</option>
+                                    <option value="utilitaires">Utilitaires</option>
+                                    <option value="remorque">Remorque / Semi Remorque</option>
+                                    <option value="bus">Bus / Autocar</option>
+                                    <option value="location">Location</option>
+                                    <option value="pieces">Piece</option>
+                                    <option value="pneu">Pneu</option>
+                                    <option disabled selected>AGRICOLE</option>
+                                    <option value="tracteur">Tracteurs</option>
+                                    <option value="recolte">Récolte</option>
+                                    <option value="balle">Balles</option>
+                                    <option value="pulverisateur">Pulvérisateur</option>
+                                    <option value="feneison">Feneison</option>
+                                    <option value="irrigition">Irrigition</option>
+                                    <option value="location">Location</option>
+                                    <option value="pieces">Piece</option>
+                                    <option value="pneu">Pneu</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
                                 <label for="years">Années</label>
                                 <input type="number" class="form-control" name="years" placeholder="Années du véhicule" required>
                             </div>
@@ -112,7 +165,7 @@
                                 <input type="number" class="form-control" name="prix" placeholder="Prix du produit" required>
                             </div>
                             <div class="form-group">
-                                <label for="image">Photo du produit</label>
+                                <label for="image">Photo du produit (Taille de fichier max: 2mo)</label>
                                 <input type="file" class="form-control-file" name="image" placeholder="Photo du produit">
                             </div>
                             <div class="form-group">

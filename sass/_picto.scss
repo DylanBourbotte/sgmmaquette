@@ -1,0 +1,22 @@
+.picto_section {
+    width: 100%;
+    height: auto;
+    background: url(../img/texture_marque.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+}
+
+.icon_select {
+    margin-top: 5%;
+}
+
+.icon_btp {
+    width: auto;
+    padding: 40px 20px 40px 20px;
+    margin-top: 0;
+    position: relative;
+    z-index: 500;
+    display: inline-block;
+}

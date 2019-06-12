@@ -1,0 +1,34 @@
+.contact {
+    width: 100%;
+    height: auto;
+    background: url('../img/texture_marque.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+.info_contact {
+    margin-top: 2%;
+}
+
+.contactus {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+.contactus_p {
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+
+.send {
+    width: 100%;
+    background-color: #2b356e;
+    border-color: #2b356e;
+    margin-top: 2%;
+}

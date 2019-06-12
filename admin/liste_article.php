@@ -1,6 +1,8 @@
 <?php
 require('../includes/config.php');
+require('auth_verification.php');
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,15 +44,15 @@ require('../includes/config.php');
                         </a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="liste_article.php">
                             <i class="fas fa-list"></i>
                             <p>Liste d'articles</p>
                         </a>
                     </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="liste_article.php">
+                    <li class="nav-item">
+                        <a class="nav-link" href="edition.php">
                             <i class="fas fa-edit"></i>
                             <p>Edition d'articles</p>
                         </a>
@@ -107,27 +109,22 @@ require('../includes/config.php');
                     ?>
             <div class="row new_article" style="margin-top: 5%;">
             <div class="col-4 photo_engin">
-            <img src="../img/nouveaute.png" class="img-fluid newimg" alt="Photo d'une nouveauté">
+            <img src="<?php echo $ligne['img']; ?>" class="img-fluid newimg_admin" alt="Photo d'une nouveauté">
             </div>
 
-        <div class="col-4">
+        <div class="col-8 ">
         <ul class="info-list">
-          <h2 class="modele"><?php echo $ligne['nameproduct']; ?><br><span><?php echo $ligne['modele']; ?></span></h2>
-          <li class="info-items"><img src="../img/yearsicon.png" class="img-fluid" alt="Icon années"> <?php echo $ligne['yearproduct']; ?></li>
-          <li class="info-items"><img src="../img/kmicon.png" class="img-fluid" alt="Icon années"> <?php echo $ligne['kilometrage']; ?></li>
-          <li class="info-items"><img src="../img/typeicon.png" class="img-fluid" alt="Icon années"> <?php echo $ligne['typeproduct']; ?></li>
-          <li class="info-items"><img src="../img/hoursicon.png" class="img-fluid" alt="Icon années"> <?php echo $ligne['hoursproduct']; ?></li>
-          
-        </ul>
-      </div>
-
-      <div class="col-4">
-            <form action="update.php" method="post">
+          <h2 class="modele admin_liste"><?php echo $ligne['nameproduct']; ?><br><span><?php echo $ligne['modele']; ?></span></h2>
+          <li class="info-items"><img src="../img/yearsicon.png" class="img-fluid admin_icon" alt="Icon années"> <?php echo $ligne['yearproduct']; ?></li>
+          <li class="info-items"><img src="../img/kmicon.png" class="img-fluid admin_icon" alt="Icon années"> <?php echo $ligne['kilometrage']; ?></li>
+          <li class="info-items"><img src="../img/typeicon.png" class="img-fluid admin_icon" alt="Icon années"> <?php echo $ligne['typeproduct']; ?></li>
+          <li class="info-items"><img src="../img/hoursicon.png" class="img-fluid admin_icon" alt="Icon années"> <?php echo $ligne['hoursproduct']; ?></li>
+          <form action="update.php" method="post">
                 <input type="hidden" value="<?php echo $ligne['id']; ?>" name="id">
-                <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
+                <input type="submit" class="btn btn-danger deletebtn" name="delete" value="Supprimer">
                 <br>
             </form>
-
+        </ul>
       </div>
   </div>
  

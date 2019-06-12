@@ -7,6 +7,26 @@ $(document).ready(function(){
     $(".materielbtp").mouseleave(function(){
     $(".submenu").hide();
     })
+    
+
+    $(".submenu-transport").hide();
+    $(".materieltransport").mouseover(function(){
+    $(".submenu-transport").show();
+    $(".nav-items").css( "color", "white" );
+    });
+    $(".materieltransport").mouseleave(function(){
+    $(".submenu-transport").hide();
+    })
+
+    $(".submenu-agricole").hide();
+    $(".materielagricole").mouseover(function(){
+    $(".submenu-agricole").show();
+    $(".nav-items").css( "color", "white" );
+    });
+    $(".materielagricole").mouseleave(function(){
+    $(".submenu-agricole").hide();
+    })
+
 
      $('.carousellol').carousel({
          interval: 1000 * 5
@@ -14,6 +34,9 @@ $(document).ready(function(){
 
       $('.btnMenu').click(function () {
         $(".overlayMenu").toggleClass("active");
+
+
+
 });
 });
 
@@ -25,10 +48,8 @@ $(document).ready(function(){
     $(".submenu").show();
     $(".nav-items").css('"color', "white");
   });
-  $(".tractopelle").mouseleave(function(){
-    $(".submenu").hide();
-  })
-})
+});
+
 
 
 function hover(element) {
@@ -37,6 +58,22 @@ function hover(element) {
   
   function unhover(element) {
     element.setAttribute('src', './img/btpIcon.png');
+  }
+
+  function hovertransport(element) {
+    element.setAttribute('src', './img/transporthoverIcon.png');
+  }
+  
+  function unhovertransport(element) {
+    element.setAttribute('src', './img/transportIcon.png');
+  }
+
+  function hoveragriculture(element) {
+    element.setAttribute('src', './img/agriculturehoverIcon.png');
+  }
+  
+  function unhoveragriculture(element) {
+    element.setAttribute('src', './img/agrIcon.png');
   }
 
   function readMore() {
@@ -56,6 +93,10 @@ function hover(element) {
       moreText.style.display = "inline";
     }
   } 
+
+  document.getElementById("myHome").onclick = function () {
+    location.href = "www.yoursite.com";
+};
 
 
 

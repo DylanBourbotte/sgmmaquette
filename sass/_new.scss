@@ -31,12 +31,23 @@
 .new_title {
     position: relative;
     z-index: 5;
+    font-size: 2rem;
 }
 
 
 
 .newimg {
-    width: auto
+    width: 300px;
+    height: 150px;
+}
+
+.photo_new {
+    width: 368px;
+    height: 267px;
+}
+
+.info {
+    margin-left: 5%;
 }
 
 .img_article {
@@ -44,9 +55,6 @@
     padding: 0;
 }
 
-.new_article {
-    background-color: #f9c121;
-}
 .info-list {
 
     // margin-right: 80%;
@@ -109,6 +117,7 @@
 
 .new_article {
     margin-top: 5%;
+    background-color: #f9c121;
 }
 
 
@@ -145,7 +154,7 @@
 
     .new_article {
         padding-bottom: 10px;
-        margin: 5px;
+        margin: 5%;
     }
 
     .new_text {
