@@ -14,9 +14,21 @@
 
 .icon_btp {
     width: auto;
-    padding: 40px 20px 40px 20px;
+    padding: 40px 1px 30px 0px;
+    // margin: 20px;
     margin-top: 0;
     position: relative;
     z-index: 500;
     display: inline-block;
+    a:hover {
+        text-decoration: none;
+    }
 }
+
+.link_img {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+

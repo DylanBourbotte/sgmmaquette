@@ -11,20 +11,20 @@ include('includes/header.php');
     <div class="container">
         <div class="row">
             <div class="col-12 text-center icon_select">
-                <a href="agricole.php?materiel=tracteurs"><img class="img-fluid icon_btp" src='img/icontracteurs.png' alt="Icon de tracteur" title="Tracteur"></a>
-                <a href="agricole.php?materiel=recolte"><img class="img-fluid icon_btp" src='img/iconrecolte.png' alt="Icon de recolte" title="Recolte"></a>
-                <a href="agricole.php?materiel=balles"><img class="img-fluid icon_btp" src='img/iconpresse.png' alt="Icon de presse" title="Balles"></a>
-                <a href="agricole.php?materiel=pulverisateurs"><img class="img-fluid icon_btp" src='img/iconpulve.png' alt="Pulverisateur" title="Pulvérisateur"></a>
-                <a href="agricole.php?materiel=feneison"><img class="img-fluid icon_btp" src='img/iconplateau.png' alt="Icon de feneison" title="Feneison"></a>
-                <a href="agricole.php?materiel=irigition"><img class="img-fluid icon_btp" src='img/iconregi.png' alt="Irigition" title="Irigition"></a>
+                <div class="test"><a href="agricole.php?materiel=tracteurs" class="link_img"><img class="img-fluid icon_btp" src='img/icontracteurs.png' alt="Icon de tracteur" title="Tracteur"><div class="test_icon">Tracteur</div></a></div>
+                <div class="test"><a href="agricole.php?materiel=recolte" class="link_img"><img class="img-fluid icon_btp" src='img/iconrecolte.png' alt="Icon de recolte" title="Recolte"><div class="test_icon">Récolte</div></a></div>
+                <div class="test"><a href="agricole.php?materiel=balles" class="link_img"><img class="img-fluid icon_btp" src='img/iconpresse.png' alt="Icon de presse" title="Balles"><div class="test_icon">Balles</div></a></div>
+                <div class="test"><a href="agricole.php?materiel=pulverisateurs" class="link_img"><img class="img-fluid icon_btp" src='img/iconpulve.png' alt="Pulverisateur" title="Pulvérisateur"><div class="test_icon">Pulvérisateur</div></a></div>
+                <div class="test"><a href="agricole.php?materiel=feneison" class="link_img"><img class="img-fluid icon_btp" src='img/iconplateau.png' alt="Icon de feneison" title="Feneison"><div class="test_icon">Feneison</div></a></div>
+                <div class="test"><a href="agricole.php?materiel=irigition" class="link_img"><img class="img-fluid icon_btp" src='img/iconregi.png' alt="Irigition" title="Irigition"><div class="test_icon">Irigition</div></a></div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 text-center icon_select">
-                <a href="location_piece.php"><img class="img-fluid icon_btp" src='img/iconlocation.png' alt="Icon de location" title="Location"></a>
-                <a href="location_piece.php"><img class="img-fluid icon_btp" src='img/iconpiece.png' alt="Icon de pieces" title="Pieces"></a>
-                <a href="agricole.php?materiel=pneu"><img class="img-fluid icon_btp" src='img/iconpneu.png' alt="Icon de pneu" title="Pneu"></a>
+            <div class="test"><a href="location_piece.php" class="link_img"><img class="img-fluid icon_btp" src='img/iconlocation.png' alt="Icon de location" title="Location"><div class="test_icon">Location</div></a></div>
+                <div class="test"><a href="location_piece.php" class="link_img"><img class="img-fluid icon_btp" src='img/iconpiece.png' alt="Icon de pieces" title="Pieces"><div class="test_icon">Pièces</div></a></div>
+                <div class="test"><a href="agricole.php?materiel=pneu" class="link_img"><img class="img-fluid icon_btp" src='img/iconpneu.png' alt="Icon de pneu" title="Pneu"><div class="test_icon">Pneu</div></a></div>
             </div>
         </div>
     </div>

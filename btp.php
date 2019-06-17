@@ -14,24 +14,25 @@ require('includes/config.php');
     <div class="container">
         <div class="row">
             <div class="col-12 text-center icon_select">
-                <a href="btp.php?materiel=pelleteuse"><img class="img-fluid icon_btp" src='img/iconpelle.png' alt="Icon de pelleteuse" title="Pelleteuse"></a>
-                <a href="btp.php?materiel=chargeuse"><img class="img-fluid icon_btp" src='img/iconchargeuse.png' alt="Icon de chargeuse" title="Chargeuse"></a>
-                <a href="btp.php?materiel=bulldozer"><img class="img-fluid icon_btp" src='img/iconbuldo.png' alt="Icon de bulldozer" title="Bulldozer"></a>
-                <a href="btp.php?materiel=niveleuse"><img class="img-fluid icon_btp" src='img/iconnive.png' alt="Icon de niveleuse" title="Niveleuse"></a>
-                <a href="btp.php?materiel=tractopelle"><img class="img-fluid icon_btp" src='img/icontracto.png' alt="Icon de tractopelle" title="Tractopelle"></a>
-                <a href="btp.php?materiel=tomberau"><img class="img-fluid icon_btp" src='img/icontombereau.png' alt="Icon de tomberau" title="Tomberau"></a>
-                <a href="btp.php?materiel=grue"><img class="img-fluid icon_btp" src='img/icongrue.png' alt="Icon de grue" title="Grue"></a>
+                <div class="test"><a href="btp.php?materiel=pelleteuse" class="link_img"><img class="img-fluid icon_btp" src='img/iconpelle.png' alt="Icon de pelleteuse" title="Pelleteuse"><div class="test_icon">Pelles</div></a></div>
+                <div class="test"><a href="btp.php?materiel=chargeuse" class="link_img"><img class="img-fluid icon_btp" src='img/iconchargeuse.png' alt="Icon de chargeuse" title="Chargeuse"><div class="test_icon">Chargeuses</div></a></div>
+                <div class="test"><a href="btp.php?materiel=bulldozer" class="link_img"><img class="img-fluid icon_btp" src='img/iconbuldo.png' alt="Icon de bulldozer" title="Bulldozer"><div class="test_icon">Bulldozers</div></a></div>
+                <div class="test"><a href="btp.php?materiel=niveleuse" class="link_img"><img class="img-fluid icon_btp" src='img/iconnive.png' alt="Icon de niveleuse" title="Niveleuse"><div class="test_icon">Niveleuses</div></a></div>
+                <div class="test"><a href="btp.php?materiel=tractopelle" class="link_img"><img class="img-fluid icon_btp" src='img/icontracto.png' alt="Icon de tractopelles" title="Niveleuse"><div class="test_icon">Tractopelles</div></a></div>
+                <!-- <div class="test"><a href="btp.php?materiel=tractopelle" class="link_img"><img class="img-fluid icon_btp" src='img/icontracto.png' alt="Icon de tractopelle" title="Tractopelle"></div class="test_icon">Tractopelles</div></a></div> -->
+                <div class="test"><a href="btp.php?materiel=tomberau" class="link_img"><img class="img-fluid icon_btp" src='img/icontombereau.png' alt="Icon de tomberau" title="Tomberau"><div class="test_icon">Tombereaux</div></a></div>
+                <div class="test"><a href="btp.php?materiel=grue" class="link_img"><img class="img-fluid icon_btp" src='img/icongrue.png' alt="Icon de grue" title="Grue"><div class="test_icon">Grue</div></a></div>
             </div>
         </div>
 
             <div class="col-12 text-center icon_select">
-                <a href="btp.php?materiel=forage"><img class="img-fluid icon_btp" src='img/iconforage.png' alt="Icon de forage" title="Forage"></a>
-                <a href="btp.php?matereiel=concassage"><img class="img-fluid icon_btp" src='img/iconconca.png' alt="Icon de concassage" title="Concassage"></a>
-                <a href="btp.php?materiel=groupe"><img class="img-fluid icon_btp" src='img/icongroupe.png' alt="Icon de groupe électrogène" title="Groupe électrogène"></a>
-                <a href="btp.php?materiel=porteengin"><img class="img-fluid icon_btp" src='img/iconporte.png' alt="Icon de porte engin" title="Porte engin"></a>
-                <a href="location_piece.php"><img class="img-fluid icon_btp" src='img/iconlocation.png' alt="Icon de location" title="Location"></a>
-                <a href="location_piece.php"><img class="img-fluid icon_btp" src='img/iconpiece.png' alt="Icon de pieces" title="Pieces"></a>
-                <a href="btp.php?materiel=pneu"><img class="img-fluid icon_btp" src='img/iconpneu.png' alt="Icon de pneu" title="Pneu"></a>
+                <div class="test"><a href="btp.php?materiel=forage" class="link_img"><img class="img-fluid icon_btp" src='img/iconforage.png' alt="Icon de forage" title="Forage"><div class="test_icon">Forage</div></a></div>
+                <div class="test"><a href="btp.php?matereiel=concassage" class="link_img"><img class="img-fluid icon_btp" src='img/iconconca.png' alt="Icon de concassage" title="Concassage"><div class="test_icon">Concassage</div></a></div>
+                <div class="test"><a href="btp.php?materiel=groupe" class="link_img"><img class="img-fluid icon_btp" src='img/icongroupe.png' alt="Icon de groupe électrogène" title="Groupe électrogène"><div class="test_icon">Électrogène</div></a></div>
+                <div class="test"><a href="btp.php?materiel=porteengin" class="link_img"><img class="img-fluid icon_btp" src='img/iconporte.png' alt="Icon de porte engin" title="Porte engin"><div class="test_icon">Porte-engins</div></a></div>
+                <div class="test"><a href="location_piece.php" class="link_img"><img class="img-fluid icon_btp" src='img/iconlocation.png' alt="Icon de location" title="Location"><div class="test_icon">Location</div></a></div>
+                <div class="test"><a href="location_piece.php" class="link_img"><img class="img-fluid icon_btp" src='img/iconpiece.png' alt="Icon de pieces" title="Pieces"><div class="test_icon">Pièces</div></a></div>
+                <div class="test"><a href="btp.php?materiel=pneu" class="link_img"><img class="img-fluid icon_btp" src='img/iconpneu.png' alt="Icon de pneu" title="Pneu"><div class="test_icon">Pneu</div></a></div>
             </div>
         </div>
     </div>

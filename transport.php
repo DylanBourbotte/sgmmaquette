@@ -12,19 +12,19 @@ include('includes/header.php');
     <div class="container">
         <div class="row">
             <div class="col-12 text-center icon_select">
-                <a href="transport.php?materiel=camion"><img class="img-fluid icon_btp" src='img/iconcamion.png' alt="Icon d'un camion" title="Camion"></a>
-                <a href="transport.php?materiel=tracteurs"><img class="img-fluid icon_btp" src='img/icontracteur.png' alt="Icon d'un tracteur" title="Tracteur"></a>
-                <a href="transport.php?materiel=utilitaires"><img class="img-fluid icon_btp" src='img/iconutilitaire.png' alt="Icon d'un utilitaire" title="Utilitaire"></a>
-                <a href="transport.php?materiel=remorque"><img class="img-fluid icon_btp" src='img/iconsemi.png' alt="Icon semi / semi remorque" title="Remorque / Semi Remorque"></a>
-                <a href="transport.php?materiel=bus"><img class="img-fluid icon_btp" src='img/iconautocar.png' alt="Icon autocar" title="Autocar"></a>
+                <div class="test"><a href="transport.php?materiel=camion" class="link_img"><img class="img-fluid icon_btp" src='img/iconcamion.png' alt="Icon d'un camion" title="Camion"><div class="test_icon">Camion</div></a></div>
+                <div class="test"><a href="transport.php?materiel=tracteurs" class="link_img"><img class="img-fluid icon_btp" src='img/icontracteur.png' alt="Icon d'un tracteur" title="Tracteur"><div class="test_icon">Tracteur</div></a></div>
+                <div class="test"><a href="transport.php?materiel=utilitaires" class="link_img"><img class="img-fluid icon_btp" src='img/iconutilitaire.png' alt="Icon d'un utilitaire" title="Utilitaire"><div class="test_icon">Utilitaire</div></a></div>
+                <div class="test"><a href="transport.php?materiel=remorque"  class="link_img"><img class="img-fluid icon_btp" src='img/iconsemi.png' alt="Icon semi / semi remorque" title="Remorque / Semi Remorque"><div class="test_icon">Remorque / Semi remorque</div></a></div>
+                <div class="test"><a href="transport.php?materiel=bus" class="link_img"><img class="img-fluid icon_btp" src='img/iconautocar.png' alt="Icon autocar" title="Autocar"><div class="test_icon">Autocar / Bus</div></a></div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 text-center icon_select">
-                <a href="location_piece.php"><img class="img-fluid icon_btp" src='img/iconlocation.png' alt="Icon location" title="Location"></a>
-                <a href="location_piece.php"><img class="img-fluid icon_btp" src='img/iconpiece.png' alt="Icon pieces" alt="Pieces" title="Pneu"></a>
-                <a href="transport.php?materiel=pneu"><img class="img-fluid icon_btp" src='img/iconpneu.png' alt="Icon de pneu" title="Pneu"></a>
+            <div class="test"><a href="location_piece.php" class="link_img"><img class="img-fluid icon_btp" src='img/iconlocation.png' alt="Icon de location" title="Location"><div class="test_icon">Location</div></a></div>
+                <div class="test"><a href="location_piece.php" class="link_img"><img class="img-fluid icon_btp" src='img/iconpiece.png' alt="Icon de pieces" title="Pieces"><div class="test_icon">Pièces</div></a></div>
+                <div class="test"><a href="transport.php?materiel=pneu" class="link_img"><img class="img-fluid icon_btp" src='img/iconpneu.png' alt="Icon de pneu" title="Pneu"><div class="test_icon">Pneu</div></a></div>
             </div>
         </div>
     </div>

@@ -8,6 +8,7 @@
                 <li><a href="#">Matériel<br> de transport</a></li>
                 <li><a href="#">Matériel<br> agricole</a></li>
                 <li><a href="#">Autres<br> Services</a></li>
+                <li><a href="#">Nous<br>Contacter</a></li>
             </ul>
         </nav>
 
@@ -47,6 +48,7 @@
 <link rel="stylesheet" href="./css/app.min.css">
 <script src="./js/loader.js"></script>
 <script src="./js/app.js"></script>
+<script src="./js/active.js"></script>
 </body>
 </html>
 

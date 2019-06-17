@@ -43,7 +43,8 @@
                 <li class="nav-items"><a class="mobile" style="margin: auto;" href="btp.php">Matériel de btp</a></li>
                 <li class="nav-items"><a class="mobile" style="margin: auto;" href="transport.php">Matériel de transport</a></li>
                 <li class="nav-items"><a class="mobile" style="margin: auto;" href="agricole.php">Matériel agricole</a></li>
-                <li class="nav-items"><a class="mobile" style="margin: auto;" href="contact.php">Autres services</a></li>
+                <li class="nav-items"><a class="mobile" style="margin: auto;" href="#">Autres services</a></li>
+                <li class="nav-items"><a class="mobile" style="margin: auto;" href="contact.php">Nous contacter</a></li>
             </ul>
             </div>
             </div>
@@ -117,7 +118,8 @@
                         <li class="submenu-agricole last-item"><a href="location_piece.php">Pieces</li>
                     </ul>
                 </li>
-                <li class="nav-items"><a href="contact.php">Autres<br>services</a></li>
+                <li class="nav-items"><a href="#">Autres<br>services</a></li>
+                <li class="nav-items"><a href="contact.php">Nous<br> contacter</a></li>
                 <li>
                     
                 </li>
