@@ -1,6 +1,6 @@
 <?php 
 require('../includes/config.php');
-
+require('auth_verification.php');
 
 $name = htmlspecialchars($_POST['name']);
 $modele = htmlspecialchars($_POST['modele']);

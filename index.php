@@ -121,15 +121,15 @@ include('includes/header.php');
     <!-- Icon btp -->
       <div class="row icon_engin">
         <div class="col-sm text-center">
-          <img id="my-img"  class="icon" src="img/btpIcon.png" alt="Icon btp" onmouseover="hover(this);" onmouseout="unhover(this);" />
+          <a href="btp.php"><img id="my-img"  class="icon" src="img/btpIcon.png" alt="Icon btp" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
         </div>
     <!-- Icon transport -->
         <div class="col-sm text-center">
-          <img src="img/transportIcon.png" class="icon" alt="Icon trnansport" onmouseover="hovertransport(this);" onmouseout="unhovertransport(this);">
+          <a href="transport.php"><img src="img/transportIcon.png" class="icon" alt="Icon transport" onmouseover="hovertransport(this);" onmouseout="unhovertransport(this);"></a>
         </div>
     <!-- Icon agricole -->
         <div class="col-sm text-center">
-          <img src="img/agrIcon.png" class="icon" alt="Icon agriculture" onmouseover="hoveragriculture(this);" onmouseout="unhoveragriculture(this);">
+          <a href="agricole.php"><img src="img/agrIcon.png" class="icon" alt="Icon agriculture" onmouseover="hoveragriculture(this);" onmouseout="unhoveragriculture(this);"></a>
         </div>
       </div>
     </div>
@@ -149,65 +149,61 @@ include('includes/header.php');
           <p>Les derniers engins d'occasions à votre disposition</p>
         </div>
 
-  </div>
-
+      </div>
+<!-- Requete SDL pour afficher les quatres derniere nouveauté de la base de données -->
   <?php 
-    // $requete = 'SELECT * FROM nouveaute';
-    // $resultat = $bdd->query($requete);
-    // $i = 4;
-    // $ligne = $resultat->fetchAll();
     $sth = $bdd->prepare('SELECT * FROM nouveaute ORDER BY id DESC LIMIT 4 ');
     $sth->execute();
     $resultat = $sth->fetchAll();
     foreach ($resultat as $key => $ligne) {
-
   ?>
+<!-- Fin de ma requete SQL -->
     <div class="row new_article">
       <div class="col-lg-4 col-md-12 img_article">
         <img src="admin/<?php echo $ligne['img']; ?>" class="img-fluid photo_new" alt="photo d'une nouveauté">
       </div>
-      <div class="col-lg-4 col-md-12 info_new">
-        <ul class="info-list">
-          <li class="info-items"><p class="title_article"><?php echo $ligne['nameproduct']; ?><br>
+     
+      
+    <div class="col-lg-4 col-md-12 info_new">
+      <ul class="info-list">
+        <li class="info-items"><p class="title_article"><?php echo $ligne['nameproduct']; ?><br>
           <?php echo $ligne['modele']; ?></p></li>
           <li class="info-items"><img src="img/yearsicon.png" alt="Icon de calendrier" class='icon_new'><span class="info"><?php echo $ligne['yearproduct'] ?></span></li>
           <li class="info-items"><img src="img/kmicon.png" alt="Icon de kilometrage" class='icon_new'><span class="info"><?php echo $ligne['kilometrage'] ?></span></li>   
           <li class="info-items"><img src="img/typeicon.png" alt="Icon de type" class='icon_new'><span class="info"><?php echo $ligne['typeproduct'] ?></span></li>   
           <li class="info-items"><img src="img/hoursicon.png" alt="Icon d'heures" class='icon_new'><span class="info"><?php echo $ligne['hoursproduct'] ?></span></li>   
-        </ul>
-      </div>
-      <div class="col-lg-4 col-md-12">
-        <div class="price">
+      </ul>
+    </div>
+
+    <div class="col-lg-4 col-md-12">
+      <div class="price">
           <p class="prix text-center"><?php echo $ligne['price']; ?> € HT</p>
-        </div>
-          <button class="read_more new_btn" id="myBtn"><span class="text_readmore">En savoir +</span></button>
+      </div>
+          <button class="read_more new_btn" id="myBtn" onclick="window.location.href='contact.php'"><span class="text_readmore">En savoir +</span></button>
       </div>
     </div>
- 
+
 <?php
     }
 ?>
-
-</div>
-
+<
+    </div>
   </div>
+</section> <!-- Fin de mes affichage de nouveauté -->
 
-</section>
-
-
-<section class="actu">
-  
+<!-- Carte actualitée --> 
+<section class="actu"> 
   <div class="container">
     <div class="row marquage">
-        <div class="col-md col-sm text-center actuTitle">
-          <img src="img/stripe_yellow.png" class='img-fluid stripe_actu' alt='stripe'>
-          <h5 class="actu_title">ACTUALITÉS</h5>
-        </div>
+      <div class="col-md col-sm text-center actuTitle">
+        <img src="img/stripe_yellow.png" class='img-fluid stripe_actu' alt='stripe'>
+        <h5 class="actu_title">ACTUALITÉS</h5>
+      </div>
 
-        <div class="col-lg-4 col-md-12 col-12 actu_text">
-          <p>Les actualités de nos réseaux sociaux, les derniers engins et les occasions à saisir</p>
-        </div>
+    <div class="col-lg-4 col-md-12 col-12 actu_text">
+        <p>Les actualités de nos réseaux sociaux, les derniers engins et les occasions à saisir</p>
     </div>
+  </div>
 
     <div class="row article_actu">
         <div class="col-sm text-center">
@@ -216,38 +212,34 @@ include('includes/header.php');
            <div class="card-body">
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<span id="dots">(..)</span><span id="more">et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
               <button class="readmore" id="myBtn" onclick="readMore()"><span id="text_read">Lire la suite</span></button>
-              <!-- <button class="readmore" id="mySecondBtn"><span class="text_readmore">Contactez nous</span></button> -->
           </div>
         </div>
       </div>
 
         <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="img/actuimg.png" alt="Card image cap">
-  <div class="card-body">
-  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<span id="dots">(..)</span><span id="more">et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-   
-  <button class="readmore" id="myBtn" onclick="readMore()"><span class="text_readmore">Lire la suite</span></button>
-    
-  </div>
-</div>
-        </div>
-
-        <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="img/actuimg.png" alt="Card image cap">
-  <div class="card-body">
-  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<span id="dots">(..)</span><span id="more">et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-    
-    <button class="readmore"><span class="text_readmore">Lire la suite</span></button>
-  </div>
-</div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/actuimg.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<span id="dots">(..)</span><span id="more">et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+            <button class="readmore" id="myBtn" onclick="readMore()"><span class="text_readmore">Lire la suite</span></button>   
         </div>
     </div>
+</div>
+
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/actuimg.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<span id="dots">(..)</span><span id="more">et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+            <button class="readmore"><span class="text_readmore">Lire la suite</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  </section>
-
+</section>
+</div>
+<!-- Fin des carte d'actualitée et de la page d'accueil -->
 <?php
 include('includes/footer.php');
 ?>

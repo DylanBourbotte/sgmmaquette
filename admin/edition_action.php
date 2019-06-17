@@ -1,5 +1,6 @@
 <?php
 require('../includes/config.php');
+require('auth_verification.php');
 
 if(isset($_POST['update'])) {
 

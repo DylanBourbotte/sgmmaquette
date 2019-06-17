@@ -11,20 +11,20 @@ include('includes/header.php');
     <div class="container">
         <div class="row">
             <div class="col-12 text-center icon_select">
-                <a href="agricole.php?materiel=tracteurs"><img class="img-fluid icon_btp" src='img/icontracteurs.png'></a>
-                <a href="agricole.php?materiel=recolte"><img class="img-fluid icon_btp" src='img/iconrecolte.png'></a>
-                <a href="agricole.php?materiel=balles"><img class="img-fluid icon_btp" src='img/iconpresse.png'></a>
-                <a href="agricole.php?materiel=pulverisateurs"><img class="img-fluid icon_btp" src='img/iconpulve.png'></a>
-                <a href="agricole.php?materiel=feneison"><img class="img-fluid icon_btp" src='img/iconplateau.png'></a>
-                <a href="agricole.php?materiel=irigition"><img class="img-fluid icon_btp" src='img/iconregi.png'></a>
+                <a href="agricole.php?materiel=tracteurs"><img class="img-fluid icon_btp" src='img/icontracteurs.png' alt="Icon de tracteur" title="Tracteur"></a>
+                <a href="agricole.php?materiel=recolte"><img class="img-fluid icon_btp" src='img/iconrecolte.png' alt="Icon de recolte" title="Recolte"></a>
+                <a href="agricole.php?materiel=balles"><img class="img-fluid icon_btp" src='img/iconpresse.png' alt="Icon de presse" title="Balles"></a>
+                <a href="agricole.php?materiel=pulverisateurs"><img class="img-fluid icon_btp" src='img/iconpulve.png' alt="Pulverisateur" title="Pulvérisateur"></a>
+                <a href="agricole.php?materiel=feneison"><img class="img-fluid icon_btp" src='img/iconplateau.png' alt="Icon de feneison" title="Feneison"></a>
+                <a href="agricole.php?materiel=irigition"><img class="img-fluid icon_btp" src='img/iconregi.png' alt="Irigition" title="Irigition"></a>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 text-center icon_select">
-                <a href="agricole.php?materiel=location"><img class="img-fluid icon_btp" src='img/iconlocation.png'></a>
-                <a href="agricole.php?materiel=pieces"><img class="img-fluid icon_btp" src='img/iconpiece.png'></a>
-                <a href="agricole.php?materiel=pneu"><img class="img-fluid icon_btp" src='img/iconpneu.png'></a>
+                <a href="location_piece.php"><img class="img-fluid icon_btp" src='img/iconlocation.png' alt="Icon de location" title="Location"></a>
+                <a href="location_piece.php"><img class="img-fluid icon_btp" src='img/iconpiece.png' alt="Icon de pieces" title="Pieces"></a>
+                <a href="agricole.php?materiel=pneu"><img class="img-fluid icon_btp" src='img/iconpneu.png' alt="Icon de pneu" title="Pneu"></a>
             </div>
         </div>
     </div>
@@ -32,18 +32,20 @@ include('includes/header.php');
 
 <section class="article_btp">
     <div class="container">
-    <?php
-    if(!empty($_GET['materiel'])) {
-      $cat = $_GET['materiel'];
-      $sth = $bdd->prepare('SELECT * FROM nouveaute WHERE categorie = "agricole" AND  materiel = "' . $cat . '" ORDER BY id');
-      $sth->execute();
-      $resultat = $sth->fetchAll();
-      foreach ($resultat as $key => $ligne) {
-  ?>
+      <?php
+        if(!empty($_GET['materiel'])) {
+        $cat = $_GET['materiel'];
+        $sth = $bdd->prepare('SELECT * FROM nouveaute WHERE categorie = "agricole" AND  materiel = "' . $cat . '" ORDER BY id');
+        $sth->execute();
+        $resultat = $sth->fetchAll();
+        foreach ($resultat as $key => $ligne) {
+      ?>
+    
     <div class="row new_article">
       <div class="col-lg-4 col-md-12 img_article">
-        <img src="admin/<?php echo $ligne['img']; ?>" class="img-fluid photo_new" alt="photo d'une nouveauté">
+        <img src="admin/<?php echo $ligne[' img']; ?>" class="img-fluid photo_new" alt="photo d'une nouveauté">
       </div>
+      
       <div class="col-lg-4 col-md-12 info_new">
         <ul class="info-list">
           <li class="info-items"><p class="title_article"><?php echo $ligne['nameproduct']; ?><br>
@@ -54,26 +56,29 @@ include('includes/header.php');
           <li class="info-items"><img src="img/hoursicon.png" alt="Icon d'heures" class='icon_new'><span class="info"><?php echo $ligne['hoursproduct'] ?></span></li>   
         </ul>
       </div>
+      
       <div class="col-lg-4 col-md-12">
         <div class="price">
           <p class="prix text-center"><?php echo $ligne['price']; ?> € HT</p>
         </div>
-          <button class="read_more new_btn" id="myBtn"><span class="text_readmore">En savoir +</span></button>
+          <button class="read_more new_btn" id="myBtn" onclick="window.location.href='index.php'"><span class="text_readmore">En savoir +</span></button>
       </div>
     </div>
  
 <?php
     } 
-    } else {
+  } else {
       $sth = $bdd->prepare('SELECT * FROM nouveaute WHERE categorie = "agricole"  ORDER BY id');
       $sth->execute();
       $resultat = $sth->fetchAll();
       foreach ($resultat as $key => $ligne) {
   ?>
+    
     <div class="row new_article">
       <div class="col-lg-4 col-md-12 img_article">
         <img src="admin/<?php echo $ligne['img']; ?>" class="img-fluid photo_new" alt="photo d'une nouveauté">
       </div>
+      
       <div class="col-lg-4 col-md-12 info_new">
         <ul class="info-list">
           <li class="info-items"><p class="title_article"><?php echo $ligne['nameproduct']; ?><br>
@@ -88,7 +93,7 @@ include('includes/header.php');
         <div class="price">
           <p class="prix text-center"><?php echo $ligne['price']; ?> € HT</p>
         </div>
-          <button class="read_more new_btn" id="myBtn"><span class="text_readmore">En savoir +</span></button>
+          <button class="read_more new_btn" id="myBtn" onclick="window.location.href='contact.php'"><span class="text_readmore">En savoir +</span></button>
       </div>
     </div>
 <?php

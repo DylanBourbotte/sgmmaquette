@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){ 
     $(".submenu").hide();
     $(".materielbtp").mouseover(function(){
     $(".submenu").show();
@@ -6,8 +6,7 @@ $(document).ready(function(){
     });
     $(".materielbtp").mouseleave(function(){
     $(".submenu").hide();
-    })
-    
+    });    
 
     $(".submenu-transport").hide();
     $(".materieltransport").mouseover(function(){
@@ -34,8 +33,6 @@ $(document).ready(function(){
 
       $('.btnMenu').click(function () {
         $(".overlayMenu").toggleClass("active");
-
-
 
 });
 });

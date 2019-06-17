@@ -11,7 +11,7 @@ $msg = htmlspecialchars($_POST['message']);
 $to = 'dylanbourbottesimplon@gmail.com';
 
 // Sujet
-$subject = "$name $surname";
+$subject = "Location - Pieces $name $surname";
 // Message
 $message = "<h1>Bonjour</h1><p>Email: $mail<br>Numéro de téléphone: $phone<br>Message : $msg</p>";
 
@@ -23,6 +23,6 @@ $headers .= "Reply-To: reply@testmail.com\r\n";
 $headers .= "Content-type: text/html\r\n";
 
 mail($to, $subject, $message, $headers);
-header('Location: contact.php');
+header('Location: index.php');
 ?>
 

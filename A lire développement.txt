@@ -1,0 +1,6 @@
+- L'ajout des articles et terminé. 
+- Le tri des article en fonction de la page selectionner ou l'icon et terminé. 
+- Le formulaire de contact / location / pieces sera a modifié une fois le site hébergée pour le moment il tourne en local avec fakemailer dans mon dossier wamp64.
+
+Les images envoyer depuis l'espace admin s'ajoute dans le dossier img et ce renomme pour le moment avec le prix de l'article ajoutez en base de données. 
+

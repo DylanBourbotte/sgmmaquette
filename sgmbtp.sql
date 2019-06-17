@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 05 juin 2019 à 13:03
+-- Généré le :  lun. 17 juin 2019 à 07:30
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.3.1
 
@@ -33,6 +33,8 @@ CREATE TABLE IF NOT EXISTS `nouveaute` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nameproduct` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `modele` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `categorie` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `materiel` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `yearproduct` int(11) NOT NULL,
   `kilometrage` int(11) NOT NULL,
   `typeproduct` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -40,15 +42,14 @@ CREATE TABLE IF NOT EXISTS `nouveaute` (
   `price` int(11) NOT NULL,
   `img` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Déchargement des données de la table `nouveaute`
 --
 
-INSERT INTO `nouveaute` (`id`, `nameproduct`, `modele`, `yearproduct`, `kilometrage`, `typeproduct`, `hoursproduct`, `price`, `img`) VALUES
-(1, 'Renault Premium', '320.18', 2008, 464000, 'Diesel', 1, 2000, '1'),
-(11, 'Renault Premium', '320.18', 2004, 124000, 'Diesel', 45, 321455, '');
+INSERT INTO `nouveaute` (`id`, `nameproduct`, `modele`, `categorie`, `materiel`, `yearproduct`, `kilometrage`, `typeproduct`, `hoursproduct`, `price`, `img`) VALUES
+(41, 'Renault', '310.8', 'transport', 'camion', 2004, 758965, 'Diesel', 478, 12788, 'img/12788.png');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

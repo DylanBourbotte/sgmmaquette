@@ -45,6 +45,7 @@
 <!-- My files -->
 
 <link rel="stylesheet" href="./css/app.min.css">
+<script src="./js/loader.js"></script>
 <script src="./js/app.js"></script>
 </body>
 </html>

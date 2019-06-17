@@ -6,7 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SGM BTP - Intégration Maquette</title>
 </head>
+<style>
+#loader {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}</style>
 <body>
+
+<div id="loader">
+    <img src="img/loader.gif" alt="Loader de la page">
+</div>
 
 <header class="mainHeader">
     <div class="container">
@@ -52,11 +74,11 @@
                     <hr class="submenu hr">
                     <li class="submenu"><a href="btp.php?materiel=porteengin">Porte engin</a></li>
                     <hr class="submenu hr">
-                    <li class="submenu"><a href="btp.php?materiel=location">Location</a></li>
+                    <li class="submenu"><a href="location_piece.php">Location</a></li>
                     <hr class="submenu hr">
                     <li class="submenu"><a href="btp.php?materiel=pieces">Pieces</a></li>
                     <hr class="submenu hr">
-                    <li class="submenu last-item"><a href="btp.php?materiel=pneu">Pneu</a></li>
+                    <li class="submenu last-item"><a href="location_piece.php">Pneu</a></li>
                 </ul>
                 </li>
                 <li class="nav-items materieltransport"><a href="transport.php">Matériel de<br>transport</a>
@@ -73,9 +95,9 @@
                         <hr class="submenu-transport hr">
                         <li class="submenu-transport"><a href="transport.php?materiel=bus">Bus - Minibus - Autocar</a></li>
                         <hr class="submenu-transport hr">
-                        <li class="submenu-transport"><a href="transport.php?materiel=location">Location</a></li>
+                        <li class="submenu-transport"><a href="location_piece.php">Location</a></li>
                         <hr class="submenu-transport hr">
-                        <li class="submenu-transport last-item"><a href="transport.php?materiel=piece">Pieces</a></li>
+                        <li class="submenu-transport last-item"><a href="location_piece.php">Pieces</a></li>
                     </ul>
                 </li>
                 <li class="nav-items materielagricole"><a href="agricole.php">Matériel<br>agricole</a>
@@ -92,7 +114,7 @@
                         <hr class="submenu-agricole hr">
                         <li class="submenu-agricole"><a href="agricole.php?materiel=irigation">Irrigiton</a></li>
                         <hr class="submenu-agricole hr">
-                        <li class="submenu-agricole last-item"><a href="agricole.php?materiel=agricolepiece">Pieces</li>
+                        <li class="submenu-agricole last-item"><a href="location_piece.php">Pieces</li>
                     </ul>
                 </li>
                 <li class="nav-items"><a href="contact.php">Autres<br>services</a></li>
