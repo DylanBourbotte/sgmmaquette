@@ -77,9 +77,9 @@
                     <hr class="submenu hr">
                     <li class="submenu"><a href="location_piece.php">Location</a></li>
                     <hr class="submenu hr">
-                    <li class="submenu"><a href="btp.php?materiel=pieces">Pieces</a></li>
+                    <li class="submenu"><a href="piece.php">Pieces</a></li>
                     <hr class="submenu hr">
-                    <li class="submenu last-item"><a href="location_piece.php">Pneu</a></li>
+                    <li class="submenu last-item"><a href="btp.php?materiel=pneu">Pneu</a></li>
                 </ul>
                 </li>
                 <li class="nav-items materieltransport"><a href="transport.php">Matériel de<br>transport</a>
@@ -98,7 +98,7 @@
                         <hr class="submenu-transport hr">
                         <li class="submenu-transport"><a href="location_piece.php">Location</a></li>
                         <hr class="submenu-transport hr">
-                        <li class="submenu-transport last-item"><a href="location_piece.php">Pieces</a></li>
+                        <li class="submenu-transport last-item"><a href="piece.php">Pieces</a></li>
                     </ul>
                 </li>
                 <li class="nav-items materielagricole"><a href="agricole.php">Matériel<br>agricole</a>
@@ -113,16 +113,24 @@
                         <hr class="submenu-agricole hr">
                         <li class="submenu-agricole"><a href="agricole.php?materiel=feneison">Feneison</a></li>
                         <hr class="submenu-agricole hr">
-                        <li class="submenu-agricole"><a href="agricole.php?materiel=irigation">Irrigiton</a></li>
+                        <li class="submenu-agricole"><a href="agricole.php?materiel=irigation">Irrigation</a></li>
                         <hr class="submenu-agricole hr">
-                        <li class="submenu-agricole last-item"><a href="location_piece.php">Pieces</li>
+                        <li class="submenu-agricole last-item"><a href="piece.php">Pieces</li>
                     </ul>
                 </li>
-                <li class="nav-items"><a href="#">Autres<br>services</a></li>
-                <li class="nav-items"><a href="contact.php">Nous<br> contacter</a></li>
-                <li>
-                    
+                
+                <li class="nav-items autreservice"><a href="#">Autres<br>services</a>
+                    <ul class="text-left menu-deroulant-service">
+                    <li class="submenu-service"><a href="contact.php">Nous<br>contacter</a></li>
+                    <hr class="submenu-service hr">
+                    <li class="submenu-service"><a href="#">Paiement</a></li>
+                    <hr class="submenu-service hr">
+                    <li class="submenu-service"><a href="#">Transport</a></li>
+                    <hr class="submenu-service hr">
+                    <li class="submenu-service last-item"><a href="#">Achat de matériel</a></li>
+                    </ul>
                 </li>
+                <li class="nav-items"><a href="#">Financement</a></li>
             </ul>
         </nav>
     </div>

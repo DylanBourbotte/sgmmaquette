@@ -31,7 +31,7 @@ require('includes/config.php');
                 <div class="test"><a href="btp.php?materiel=groupe" class="link_img"><img class="img-fluid icon_btp" src='img/icongroupe.png' alt="Icon de groupe électrogène" title="Groupe électrogène"><div class="test_icon">Électrogène</div></a></div>
                 <div class="test"><a href="btp.php?materiel=porteengin" class="link_img"><img class="img-fluid icon_btp" src='img/iconporte.png' alt="Icon de porte engin" title="Porte engin"><div class="test_icon">Porte-engins</div></a></div>
                 <div class="test"><a href="location_piece.php" class="link_img"><img class="img-fluid icon_btp" src='img/iconlocation.png' alt="Icon de location" title="Location"><div class="test_icon">Location</div></a></div>
-                <div class="test"><a href="location_piece.php" class="link_img"><img class="img-fluid icon_btp" src='img/iconpiece.png' alt="Icon de pieces" title="Pieces"><div class="test_icon">Pièces</div></a></div>
+                <div class="test"><a href="piece.php" class="link_img"><img class="img-fluid icon_btp" src='img/iconpiece.png' alt="Icon de pieces" title="Pieces"><div class="test_icon">Pièces</div></a></div>
                 <div class="test"><a href="btp.php?materiel=pneu" class="link_img"><img class="img-fluid icon_btp" src='img/iconpneu.png' alt="Icon de pneu" title="Pneu"><div class="test_icon">Pneu</div></a></div>
             </div>
         </div>

@@ -27,6 +27,7 @@
         text-transform: uppercase;
         position: relative;
         margin-right: 25px;
+        font-size: 15px;
         a {
             color: #f9c121;
             text-decoration: none;
@@ -62,6 +63,13 @@
 }
 
 .submenu-agricole {
+    list-style: none;
+    margin-top: 10px;
+    position: absolute;
+    float: none;
+}
+
+.submenu-service {
     list-style: none;
     margin-top: 10px;
     position: absolute;
@@ -127,6 +135,31 @@
     position: absolute;
     padding-left: 3px;
     .submenu-agricole, .submenu-agricole a {
+        color: #fff;
+        padding-top: 1px;
+        position: relative;
+        // margin-left: 3px;
+        float: none;
+        // &:last-child {
+        //     padding-bottom: 5px;
+        // }
+        &:hover {
+            color: #2b356e;
+            transition: color .3s ease-in;
+            float: none;
+        }
+    }
+}
+
+.menu-deroulant-service{
+    background: hsl(44, 95%, 55%);
+    z-index: 1000;
+    margin-top: 2%;
+    // width: 150px;
+    display: block;
+    position: absolute;
+    padding-left: 3px;
+    .submenu-service, .submenu-service a {
         color: #fff;
         padding-top: 1px;
         position: relative;

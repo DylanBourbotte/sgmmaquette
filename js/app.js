@@ -26,6 +26,16 @@ $(document).ready(function(){
     $(".submenu-agricole").hide();
     })
 
+    $(".submenu-service").hide();
+    $(".autreservice").mouseover(function(){
+    $(".submenu-service").show();
+    $(".nav-items").css( "color", "white" );
+    });
+    $(".autreservice").mouseleave(function(){
+    $(".submenu-service").hide();
+    })
+
+
 
      $('.carousellol').carousel({
          interval: 1000 * 5

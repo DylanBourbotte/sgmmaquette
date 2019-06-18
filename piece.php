@@ -36,12 +36,12 @@ include('includes/header.php');
     <div class="container">
         <div class="row">
             <div class="col-12 info_contact">
-                <h1 class="text-center contactus">Location</h1>
+                <h1 class="text-center contactus">Pieces</h1>
                 <p class="text-center contactus_p">Une demande de produit en particulier ? Une demande de renseignement ? Nous vous répondrons dans les plus bref délai.</p>
             </div>
         </div>
         
-        <form action="location_send.php" method="post">
+        <form action="piece_send.php" method="post">
         <div class="row">
             <div class="col-6">
                     <div class="form-group">
@@ -63,7 +63,7 @@ include('includes/header.php');
             </div>
             <div class="col-6">
                 <label for="message"></label>
-                <textarea name="message" class="form-control" id="message_contact" placeholder="Votre demande de location" cols="60" rows="10" required></textarea>
+                <textarea name="message" class="form-control" id="message_contact" placeholder="Votre piece" cols="60" rows="10" required></textarea>
             </div>
             <div class="col-12 submit">
                 <input type="submit" name="envoie" class="btn btn-primary send" value="Soumettre">
