@@ -123,14 +123,14 @@
                     <ul class="text-left menu-deroulant-service">
                     <li class="submenu-service"><a href="contact.php">Nous<br>contacter</a></li>
                     <hr class="submenu-service hr">
-                    <li class="submenu-service"><a href="#">Paiement</a></li>
+                    <li class="submenu-service"><a href="paiement.php">Paiement</a></li>
                     <hr class="submenu-service hr">
-                    <li class="submenu-service"><a href="#">Transport</a></li>
+                    <li class="submenu-service"><a href="transport-service.php">Transport</a></li>
                     <hr class="submenu-service hr">
-                    <li class="submenu-service last-item"><a href="#">Achat de matériel</a></li>
+                    <li class="submenu-service last-item"><a href="achat_materiel.php">Achat de matériel</a></li>
                     </ul>
                 </li>
-                <li class="nav-items"><a href="#">Financement</a></li>
+                <li class="nav-items"><a href="financement.php">Financement</a></li>
             </ul>
         </nav>
     </div>

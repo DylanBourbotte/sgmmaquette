@@ -16,7 +16,7 @@ include('includes/header.php');
                 <div class="test"><a href="agricole.php?materiel=balles" class="link_img"><img class="img-fluid icon_btp" src='img/iconpresse.png' alt="Icon de presse" title="Balles"><div class="test_icon">Balles</div></a></div>
                 <div class="test"><a href="agricole.php?materiel=pulverisateurs" class="link_img"><img class="img-fluid icon_btp" src='img/iconpulve.png' alt="Pulverisateur" title="Pulvérisateur"><div class="test_icon">Pulvérisateur</div></a></div>
                 <div class="test"><a href="agricole.php?materiel=feneison" class="link_img"><img class="img-fluid icon_btp" src='img/iconplateau.png' alt="Icon de feneison" title="Feneison"><div class="test_icon">Feneison</div></a></div>
-                <div class="test"><a href="agricole.php?materiel=irigition" class="link_img"><img class="img-fluid icon_btp" src='img/iconregi.png' alt="Irigition" title="Irigition"><div class="test_icon">Irigition</div></a></div>
+                <div class="test"><a href="agricole.php?materiel=irigition" class="link_img"><img class="img-fluid icon_btp" src='img/iconregi.png' alt="Irigition" title="Irigition"><div class="test_icon">Irigation</div></a></div>
             </div>
         </div>
 
